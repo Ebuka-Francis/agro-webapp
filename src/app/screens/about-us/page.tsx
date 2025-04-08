@@ -57,7 +57,7 @@ export default function Page() {
          </div>
          <div className="text-[20px]">
             <h3 className=" m-4 text-[30px]">Why choose us</h3>
-            <ul className="list-disc">
+            <ul className="list-disc p-4 ">
                <li>Premium Quality – 100% natural and unrefined products</li>
                <li>
                   Sustainable Sourcing – Supporting local communities &
@@ -71,6 +71,16 @@ export default function Page() {
                   exceptional customer support
                </li>
             </ul>
+            <p>
+               At Klaxon Ford Resources, we don’t just export organic products;
+               we deliver nature’s best while creating a positive impact in the
+               industry.
+            </p>
+            <p>
+               Headquartered in 1, Uba Obasi Street of MCC Road, Aba, Abia
+               State. We are your trusted partner in organic-exports. Let’s
+               build a sustainable future together!
+            </p>
          </div>
       </div>
    );

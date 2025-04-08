@@ -31,21 +31,21 @@ export const Commodity: CommodityProps[] = [
       imgUrl: '/shea-butter.png',
       description:
          'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
-      link: '',
+      link: '/screens/shae-butter',
    },
    {
       id: 'c2',
       imgUrl: '/castle-oil.png',
       description:
          'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
-      link: '',
+      link: '/screens/castle-oil',
    },
    {
       id: 'c3',
-      imgUrl: '/castle-oil.png',
+      imgUrl: '/coconut-oil.png',
       description:
          'Cold-pressed from fresh coconuts, this oil is popular in cooking, skincare, and haircare, offering numerous health benefits.',
-      link: '',
+      link: '/screens/coconut-oil',
    },
    {
       id: 'c4',

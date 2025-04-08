@@ -1,5 +1,6 @@
 import { Commodity } from '@/data/data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { CommodityProps } from '@/types/types';
 import { ChevronRight } from 'lucide-react';
@@ -31,12 +32,12 @@ export function Product({ imgUrl, description, link }: CommodityProps) {
          <Image src={imgUrl} alt={imgUrl} width={300} height={200} />
          <p className="text-center max-w-[450px]">{description}</p>
          <div className="flex items-center gap-3 ">
-            <a
+            <Link
                className="text-[#fff] font-bold bg-[#669900] border border-black p-3 flex items-center gap-2"
                href={link}
             >
                <p>Learn more</p> <ChevronRight />
-            </a>
+            </Link>
             <button className="text-[#fff] font-bold bg-[#669900] border border-black p-3  flex items-center gap-2 ">
                Buy Now
                <ChevronRight />

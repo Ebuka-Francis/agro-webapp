@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
+import NextLink from 'next/link';
 import { useState } from 'react';
 
 import {
@@ -43,18 +44,36 @@ export function TopNav() {
                >
                   <X />
                </button>
-               <Link href="/" className="text-lg font-semibold">
+               <NextLink
+                  onClick={handleCLoseMenu}
+                  href="/"
+                  className="text-lg font-semibold"
+               >
                   Home
-               </Link>
-               <Link href="/screens/about-us" className="text-lg font-semibold">
+               </NextLink>
+               <NextLink
+                  onClick={handleCLoseMenu}
+                  href="/screens/about-us"
+                  className="text-lg font-semibold"
+               >
                   About us
-               </Link>
-               <Link href="/docs" className="text-lg font-semibold">
+               </NextLink>
+               <NextLink
+                  onClick={handleCLoseMenu}
+                  href="/docs"
+                  legacyBehavior
+                  passHref
+                  className="text-lg font-semibold"
+               >
                   Our Product
-               </Link>
-               <Link href="/docs" className="text-lg font-semibold">
+               </NextLink>
+               <NextLink
+                  onClick={handleCLoseMenu}
+                  href="/docs"
+                  className="text-lg font-semibold"
+               >
                   Contact us
-               </Link>
+               </NextLink>
             </div>
          )}
 
