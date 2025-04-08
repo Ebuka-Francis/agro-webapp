@@ -1,42 +1,3 @@
-// import * as React from 'react';
-// import Image from 'next/image';
-
-// // import { Card } from '@/components/ui/card';
-// import {
-//    Carousel,
-//    CarouselContent,
-//    CarouselItem,
-//    CarouselNext,
-//    CarouselPrevious,
-// } from '@/components/ui/carousel';
-
-// export function CarouselDemo() {
-//    return (
-//       <Carousel className=" relative ">
-//          <CarouselContent>
-//             {Array.from({ length: 5 }).map((_, index) => (
-//                <CarouselItem key={index}>
-//                   <div className="">
-//                      {/* <Card> */}
-//                      <Image
-//                         src="/banner-shea-butter-from-ghana.jpg"
-//                         alt="hero image"
-//                         width={0} // Allows dynamic resizing
-//                         height={0}
-//                         sizes="50vw" // Makes it responsive
-//                         className="w-full h-auto"
-//                      />
-//                      {/* </Card> */}
-//                   </div>
-//                </CarouselItem>
-//             ))}
-//          </CarouselContent>
-//          <CarouselPrevious />
-//          <CarouselNext />
-//       </Carousel>
-//    );
-// }
-
 'use client';
 
 import useEmblaCarousel from 'embla-carousel-react';
@@ -90,7 +51,7 @@ export function CarouselDemo({ images, onSlideChange }: CarouselDemoProps) {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="w-full h-auto"
+                        className="w-full h-[50vh] sm:h-auto"
                      />
                   </div>
                ))}
@@ -100,13 +61,13 @@ export function CarouselDemo({ images, onSlideChange }: CarouselDemoProps) {
          {/* Previous & Next buttons */}
          <button
             onClick={scrollPrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full z-10 "
          >
             ◀
          </button>
          <button
             onClick={scrollNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full z-10"
          >
             ▶
          </button>

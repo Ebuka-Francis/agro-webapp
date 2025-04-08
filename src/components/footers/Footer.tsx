@@ -58,8 +58,8 @@ const footerData2 = [
 export default function Footer() {
    return (
       <footer className="bg-[#0a0a0a] text-white">
-         <div className="max-w-6xl mx-auto flex justify-between items-center ">
-            <div className=" flex gap-10 p-5">
+         <div className="max-w-6xl mx-auto flex justify-between items-start sm:items-center flex-col sm:flex-row ">
+            <div className=" flex gap-10 p-5 flex-col md:flex-row ">
                <div className="max-w-[500px]">
                   <h3 className="text-[30px] text-white mb-4 ">What We Do</h3>
                   <div className="flex flex-col gap-3">
@@ -93,7 +93,7 @@ export default function Footer() {
                </div>
             </div>
 
-            <div className="flex gap-10">
+            <div className="flex gap-10  p-5 flex-col md:flex-row ">
                <div>
                   <Image
                      src="/products-Raw-Shea-Nuts.jpg"
@@ -102,7 +102,7 @@ export default function Footer() {
                      height={200}
                   />
                </div>
-               <div className="flex flex-col gap-2 text-[#919191]">
+               <div className="flex flex-col gap-2 text-[#919191] max-w-[255px]">
                   <h3 className="text-[30px] text-white mb-2 ">
                      Get in touch with us{' '}
                   </h3>

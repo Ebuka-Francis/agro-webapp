@@ -1,88 +1,57 @@
 import { CommodityProps } from '@/types/types';
-import { BriefcaseBusiness, Cog, Link } from 'lucide-react';
+import { Link } from 'lucide-react';
 
 export const CardItems = [
    {
       id: '1',
-      imgUrl: <BriefcaseBusiness />,
-      title: 'African Artefact Exports',
+      imgUrl: <Link />,
+      title: 'Premium Agro Organic Export ',
       description:
-         'Exports of West African artifacts such as beads, wooden carvings, kente cloth, brass figures.....',
-      link: 'Learn More',
+         'We specialize in sourcing and exporting top-quality shea butter, castor oil, cashew nuts, and coconut oil to global markets. Our strict quality control ensures that every product meets international standards',
    },
    {
       id: '2',
       imgUrl: <Link />,
-      title: 'Exporters & Importers',
+      title: 'Sustainable & Ethical Sourcing',
       description:
-         'Our focus is centered on a variety of services in the domestic trading and exports space of commodity...',
-      link: 'Learn More',
+         'We specialize in sourcing and exporting top quality shea butter, castor oil, cashew nuts, and coconut oil to global markets. Our strict quality control ensures that every product meets international standards',
    },
    {
       id: '3',
       imgUrl: <Link />,
-      title: 'Sourcing & Buying Agents',
+      title: 'Global Supply & Reliable Logistics',
       description:
-         'Worried about importing low quality goods from West Africa? Speak to us and we will be glad to bring...',
-      link: 'Learn More',
-   },
-   {
-      id: '4',
-      imgUrl: <Cog />,
-      title: 'Agro Processors',
-      description:
-         'We process (for both internal consumption and for export purposes) raw materials and intermediate pr...',
-      link: 'Learn More',
+         'We specialize in sourcing and exporting top-quality shea butter, castor oil, cashew nuts, and coconut oil to global markets. Our strict quality control ensures that every product meets international standards',
    },
 ];
 
 export const Commodity: CommodityProps[] = [
    {
       id: 'c1',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
+      imgUrl: '/shea-butter.png',
+      description:
+         'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
+      link: '',
    },
    {
       id: 'c2',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
+      imgUrl: '/castle-oil.png',
+      description:
+         'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
+      link: '',
    },
    {
       id: 'c3',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
+      imgUrl: '/castle-oil.png',
+      description:
+         'Cold-pressed from fresh coconuts, this oil is popular in cooking, skincare, and haircare, offering numerous health benefits.',
+      link: '',
    },
    {
       id: 'c4',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c5',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c6',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c7',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c8',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c9',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c10',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c11',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
-   },
-   {
-      id: 'c12',
-      imgUrl: '/products-Raw-Shea-Nuts.jpg',
+      imgUrl: '/shea-butter.png',
+      description:
+         'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare.',
+      link: '',
    },
 ];
