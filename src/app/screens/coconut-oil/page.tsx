@@ -1,4 +1,4 @@
-import React from 'react';
+import ProductAnalysis from '@/components/productAnalysis';
 
 function Page() {
    return (
@@ -64,11 +64,7 @@ function Page() {
                <li>Oil pulling for oral hygiene</li>
             </ul>
          </div>
-         <div className="flex justify-end p-4">
-            <button className="bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 rounded-full p-4 max-w-[230px] text-white font-bold border-none cursor-pointer ">
-               Product Quality Analysis
-            </button>
-         </div>
+         <ProductAnalysis />
       </div>
    );
 }

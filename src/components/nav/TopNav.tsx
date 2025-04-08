@@ -99,7 +99,7 @@ export function TopNav() {
                   </Link>
                </NavigationMenuItem>
                <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
+                  <Link href="/screens/product" legacyBehavior passHref>
                      <NavigationMenuLink
                         className={navigationMenuTriggerStyle()}
                      >
