@@ -49,7 +49,7 @@ export const Commodity: CommodityProps[] = [
    },
    {
       id: 'c4',
-      imgUrl: '/shea-butter.png',
+      imgUrl: '/mecca.png',
       description:
          'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare.',
       link: '',

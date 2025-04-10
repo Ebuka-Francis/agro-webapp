@@ -1,7 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import {
+   Dialog,
+   DialogContent,
+   DialogTitle,
+   DialogTrigger,
+} from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
@@ -42,12 +47,13 @@ export default function ProductAnalysis() {
                </Button>
             </div>
          </DialogTrigger>
-         <DialogContent className="max-w-5xl overflow-hidden bg-black rounded-lg p-4">
-            <div className="relative w-full h-[400px] flex items-center justify-center">
+         <DialogContent className="block max-w-5xl  overflow-hidden rounded-lg p-0 ">
+            <DialogTitle className="hidden">Product Analytics</DialogTitle>
+            <div className="relative w-full  flex items-center justify-center">
                <Image
                   src={images[currentIndex]}
                   alt={`Slide ${currentIndex}`}
-                  className="object-contain w-full h-full"
+                  className="object-contain w-1/2 md:w-full h-full"
                   width={600}
                   height={600}
                />
@@ -55,17 +61,17 @@ export default function ProductAnalysis() {
                {/* Left arrow */}
                <button
                   onClick={prevImage}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-white/20 hover:bg-white/40 rounded-full"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-gray-300 hover:bg-gray-500 rounded-full z-10 "
                >
-                  <ChevronLeft className="text-white" />
+                  <ChevronLeft className="text-black" />
                </button>
 
                {/* Right arrow */}
                <button
                   onClick={nextImage}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-white/20 hover:bg-white/40 rounded-full"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-gray-300 hover:bg-gray-500 rounded-full z-10"
                >
-                  <ChevronRight className="text-white" />
+                  <ChevronRight className="text-black" />
                </button>
             </div>
          </DialogContent>

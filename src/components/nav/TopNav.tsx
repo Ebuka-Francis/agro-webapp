@@ -60,9 +60,7 @@ export function TopNav() {
                </NextLink>
                <NextLink
                   onClick={handleCLoseMenu}
-                  href="/docs"
-                  legacyBehavior
-                  passHref
+                  href="/screens/product"
                   className="text-lg font-semibold"
                >
                   Our Product
