@@ -7,9 +7,13 @@ import {
    DialogTitle,
    DialogTrigger,
 } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+
+import ButtonCertificate from '../button-certificate/ButtonCertificate';
+import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 
 const images = [
    '/document1.jpeg',
@@ -40,14 +44,16 @@ export default function ProductAnalysis() {
 
    return (
       <Dialog>
-         <DialogTrigger asChild>
-            <div className="flex justify-end p-4">
-               <Button className="bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 rounded-full p-4 max-w-[230px] text-white font-bold border-none cursor-pointer ">
+         <div className="flex flex-col items-center sm:flex-row justify-end p-4 gap-3">
+            <DialogTrigger asChild>
+               <Button className="bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 rounded-full p-4 max-w-[230px] w-[100%] text-white font-bold border-none cursor-pointer ">
                   Product Quality Analysis
                </Button>
-            </div>
-         </DialogTrigger>
-         <DialogContent className="block max-w-5xl  overflow-hidden rounded-lg p-0 ">
+            </DialogTrigger>
+
+            <ButtonCertificate />
+         </div>
+         <DialogContent className="block max-w-5xl bg-white overflow-hidden rounded-lg p-0 ">
             <DialogTitle className="hidden">Product Analytics</DialogTitle>
             <div className="relative w-full  flex items-center justify-center">
                <Image
