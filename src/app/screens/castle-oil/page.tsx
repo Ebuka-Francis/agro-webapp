@@ -30,9 +30,9 @@ function Page() {
          <h3 className=" font-bold mb-3 text-center text-[34px]">
             Product Details
          </h3>
-         <div className="flex flex-col md:flex-row items-start gap-5 w-full ">
-            <div className=" static md:sticky md:top-[150px] max-w-[700px] w-[100%] flex flex-col gap-[20px] items-center md:items-start  ">
-               <div className="flex flex-col xl:flex-row gap-[10px] w-[100%] ">
+         <div className="flex flex-col lg:flex-row items-start gap-5 w-full ">
+            <div className=" static lg:sticky md:top-[150px] mx-auto max-w-[700px] w-[100%] flex flex-col gap-[20px] items-center md:items-start  ">
+               <div className="flex flex-col xl:flex-row gap-[10px] w-[100%] items-center lg:items-start ">
                   <Image
                      src="/castle-oil.png"
                      alt="Castle oil"
