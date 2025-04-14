@@ -40,10 +40,6 @@ export function Product({ imgUrl, description, link }: CommodityProps) {
             >
                <p>Learn more</p> <ChevronRight />
             </Link>
-            {/* <button className="text-[#fff] font-bold bg-[#669900] border border-black p-3  flex items-center gap-2 ">
-               Buy Now
-               <ChevronRight />
-            </button> */}
             <BuyNow />
          </div>
       </div>

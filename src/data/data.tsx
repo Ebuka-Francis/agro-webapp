@@ -37,7 +37,7 @@ export const Commodity: CommodityProps[] = [
       id: 'c2',
       imgUrl: '/castle-oil.png',
       description:
-         'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
+         '   Cold-pressed and nutrient-rich, Castle Oil is valued for its versatility in cooking, skincare, and wellness, delivering natural nourishment and a range of health benefits. ',
       link: '/screens/castle-oil',
    },
    {
@@ -51,7 +51,7 @@ export const Commodity: CommodityProps[] = [
       id: 'c4',
       imgUrl: '/mecca.png',
       description:
-         'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare.',
-      link: '',
+         ' Mica is a mineral with a layered structure that impresses with its exceptional chemical and thermal resistance, electrical insulation effect and sound-absorbing properties.',
+      link: '/screens/mica',
    },
 ];
