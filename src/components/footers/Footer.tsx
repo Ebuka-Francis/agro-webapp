@@ -125,7 +125,10 @@ export default function Footer() {
                </div>
             </div>
          </div>
-         <div className="bg-[#111] h-[100px] "></div>
+         <div className="bg-[#111] h-[100px] ">
+            <a href="sales@klaxonresoursces.com">sales@klaxonresoursces.com</a>
+            <div></div>
+         </div>
       </footer>
    );
 }
