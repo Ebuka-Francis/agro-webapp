@@ -4,21 +4,21 @@ import ProductAnalysis from '@/components/productAnalysis';
 
 const PriceData = [
    {
-      title: '32 Ounce',
-      subtitle: 'Pack of one',
+      title: '200 gram',
+      subtitle: 'Pack of tw0',
       price: '$17.39',
       surprise: '($0.54 / Ounce)',
    },
    {
-      title: '16 Ounce',
-      subtitle: 'Pack of one',
-      price: '$17.39',
+      title: '400 gram',
+      subtitle: 'Pack of four',
+      price: '$34.39',
       surprise: '($0.54 / Ounce)',
    },
    {
-      title: '8 Ounce',
-      subtitle: 'Pack of one',
-      price: '$17.39',
+      title: '600 gram',
+      subtitle: 'Pack of six',
+      price: '$55.39',
       surprise: '($0.54 / Ounce)',
    },
 ];

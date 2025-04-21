@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { Button } from '../ui/button';
 
 type TeamProps = {
    imgUrl: string;
@@ -10,8 +11,8 @@ type TeamProps = {
 
 const TeamData = [
    {
-      imgUrl: '/human.png',
-      title: 'John Doe',
+      imgUrl: '/michelle.png',
+      title: 'Michaela Lang',
       position: 'CEO',
       contactInfo: 'Reach me ',
    },
@@ -70,11 +71,17 @@ export default OurTeam;
 
 export function TeamCards({ imgUrl, title, position, contactInfo }: TeamProps) {
    return (
-      <div className="flex flex-col ">
-         <Image src={imgUrl} alt={imgUrl} width={300} height={200} />
-         <h4>{title}</h4>
-         <p>{position}</p>
-         <button>{contactInfo}</button>
+      <div className="flex flex-col items-center gap-3 ">
+         <div className="max-w-[inherit] mx-auto rounded-[20px]">
+            <Image src={imgUrl} alt={imgUrl} width={400} height={200} />
+         </div>
+         <div className="w-[100%]">
+            <h4 className="text-[25px] text-center font-bold ">{title}</h4>
+            <p className="text-[20px] text-center">{position}</p>
+            <Button className="cursor-pointer bg-green-800 w-[100%] text-[18px] font-bold p-[25px] ">
+               {contactInfo}
+            </Button>
+         </div>
       </div>
    );
 }

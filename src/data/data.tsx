@@ -54,4 +54,11 @@ export const Commodity: CommodityProps[] = [
          ' Mica is a mineral with a layered structure that impresses with its exceptional chemical and thermal resistance, electrical insulation effect and sound-absorbing properties.',
       link: '/screens/mica',
    },
+   {
+      id: 'c5',
+      imgUrl: '/moringa.png',
+      description:
+         'Coming up soon i need more data for that will be done soon.',
+      link: '/screens/moringa',
+   },
 ];

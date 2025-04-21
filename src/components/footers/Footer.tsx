@@ -1,5 +1,7 @@
-import { Mail, Phone } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 
 const footerDate1 = [
    {
@@ -125,9 +127,27 @@ export default function Footer() {
                </div>
             </div>
          </div>
-         <div className="bg-[#111] h-[100px] ">
-            <a href="sales@klaxonresoursces.com">sales@klaxonresoursces.com</a>
-            <div></div>
+         <div className="bg-[#111] ">
+            <div className="max-w-6xl  p-5  mx-auto flex justify-between items-center h-[inherit] ">
+               <Link
+                  className="text-[13px] text-[#919191] "
+                  target="_blank"
+                  href="/sales@klaxonresoursces.com"
+               >
+                  sales@klaxonresoursces.com
+               </Link>
+               <div className="flex gap-3 items-center">
+                  <Link href={''}>
+                     <Facebook className="w-[15px]" />
+                  </Link>
+                  <Link href={''}>
+                     <Instagram className="w-[15px]" />
+                  </Link>
+                  <Link href={''}>
+                     <Mail className="w-[15px]" />
+                  </Link>
+               </div>
+            </div>
          </div>
       </footer>
    );

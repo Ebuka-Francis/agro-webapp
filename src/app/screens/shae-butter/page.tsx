@@ -5,22 +5,22 @@ import { BuyNow } from '@/components/buy-now';
 
 const PriceData = [
    {
-      title: '32 Ounce',
+      title: '200 gram',
       subtitle: 'Pack of one',
       price: '$17.39',
-      surprise: '($0.54 / Ounce)',
+      surprise: '($0.54 / gram)',
    },
    {
-      title: '16 Ounce',
+      title: '400 gram',
       subtitle: 'Pack of one',
       price: '$17.39',
-      surprise: '($0.54 / Ounce)',
+      surprise: '($0.54 / gram)',
    },
    {
-      title: '8 Ounce',
+      title: '600 gram',
       subtitle: 'Pack of one',
       price: '$17.39',
-      surprise: '($0.54 / Ounce)',
+      surprise: '($0.54 / gram)',
    },
 ];
 

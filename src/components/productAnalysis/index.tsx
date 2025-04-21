@@ -59,7 +59,7 @@ export default function ProductAnalysis() {
                <Image
                   src={images[currentIndex]}
                   alt={`Slide ${currentIndex}`}
-                  className="object-contain w-1/2 md:w-full h-full"
+                  className="object-contain w-1/2 md:w-full h-full  "
                   width={600}
                   height={600}
                />

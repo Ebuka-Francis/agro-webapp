@@ -77,7 +77,7 @@ export function TopNav() {
 
          {/* Desktop Navigation */}
          <NavigationMenu className="hidden sm:block">
-            <NavigationMenuList>
+            <NavigationMenuList className="w-[100%]">
                <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
                      <NavigationMenuLink
@@ -106,7 +106,7 @@ export function TopNav() {
                   </Link>
                </NavigationMenuItem>
                <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
+                  <Link href="/screens/our-team" legacyBehavior passHref>
                      <NavigationMenuLink
                         className={navigationMenuTriggerStyle()}
                      >

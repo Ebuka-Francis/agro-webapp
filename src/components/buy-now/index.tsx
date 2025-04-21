@@ -3,8 +3,6 @@
 import * as React from 'react';
 import NextLink from 'next/link';
 
-// import { DropdownMenuCheckboxItemProps } from '@radix-ui/react-dropdown-menu';
-
 import { Button } from '@/components/ui/button';
 import {
    DropdownMenu,
@@ -14,13 +12,7 @@ import {
 } from '@radix-ui/react-dropdown-menu';
 import { ChevronRight } from 'lucide-react';
 
-// type Checked = DropdownMenuCheckboxItemProps['checked'];
-
 export function BuyNow() {
-   // const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true);
-   // const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false);
-   // const [showPanel, setShowPanel] = React.useState<Checked>(false);
-
    return (
       <DropdownMenu>
          <DropdownMenuTrigger asChild>
