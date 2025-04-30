@@ -56,9 +56,9 @@ export const Commodity: CommodityProps[] = [
    },
    {
       id: 'c5',
-      imgUrl: '/moringa.png',
+      imgUrl: '/moringa_oil.png',
       description:
-         'Coming up soon i need more data for that will be done soon.',
+         'Extracted from the seeds of the Moringa oleifera tree through a cold press method, our Moringa Oil is a premium-quality, nutrient-rich oil known for its light texture and powerful healing properties. Retaining all its natural benefits due to cold pressing, this oil is a true skin and hair elixir.',
       link: '/screens/moringa',
    },
 ];

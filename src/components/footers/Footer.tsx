@@ -134,7 +134,7 @@ export default function Footer() {
                   target="_blank"
                   href="/sales@klaxonresoursces.com"
                >
-                  sales@klaxonresoursces.com
+                  sales@klaxonfordresoursces.com
                </Link>
                <div className="flex gap-3 items-center">
                   <Link href={''}>
