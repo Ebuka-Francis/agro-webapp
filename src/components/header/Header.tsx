@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { CarouselDemo } from '../carousel/Carousel';
 
+import { Button } from '../ui/button';
+
 const images = [
    {
       src: '/banner-shea-butter-from-ghana.jpg',
@@ -53,6 +55,9 @@ export default function Header() {
                </h3>
             </div>
          </div>
+         <Button className="size-6 animate-bounce fixed right-15 bottom-7 text-[#669900] border-none w-[180px] h-[40px] ">
+            Contact Support
+         </Button>
       </header>
    );
 }
