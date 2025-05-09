@@ -6,27 +6,27 @@ import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 const footerDate1 = [
    {
       label: 'African Artefact Exports',
-      link: '',
+      link: '/',
    },
    {
       label: 'Agricultural Commodities Exports',
-      link: '',
+      link: '/',
    },
    {
       label: 'Agro Processors',
-      link: '',
+      link: '/',
    },
    {
       label: 'Commodity Distributors',
-      link: '',
+      link: '/',
    },
    {
-      label: 'Exporters & Importers',
-      link: '',
+      label: 'Castle Oil to Castor Oil',
+      link: '/',
    },
    {
       label: 'Sourcing & Buying Agents',
-      link: '',
+      link: '/',
    },
 ];
 

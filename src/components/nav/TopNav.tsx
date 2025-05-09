@@ -67,7 +67,7 @@ export function TopNav() {
                </NextLink>
                <NextLink
                   onClick={handleCLoseMenu}
-                  href="/docs"
+                  href="/screens/our-team"
                   className="text-lg font-semibold"
                >
                   Contact us

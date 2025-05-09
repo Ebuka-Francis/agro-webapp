@@ -51,7 +51,7 @@ export function CarouselDemo({ images, onSlideChange }: CarouselDemoProps) {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="w-full h-[50vh] sm:h-auto"
+                        className="w-full h-[30vh] md:h-[50vh] sm:h-auto"
                      />
                   </div>
                ))}

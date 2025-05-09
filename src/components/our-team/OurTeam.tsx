@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import WhatsAppButton from '../button-certificate/WhatsapButton';
+// import CommentForm from '../comment-form/CommentForm';
 
 type TeamProps = {
    imgUrl: string;
@@ -19,7 +20,7 @@ const TeamData = [
    },
    {
       imgUrl: '/michela.jpeg',
-      title: 'Frank Doe',
+      title: 'Michaela Lang',
       position: 'Assistant C.E.O/ Head Of Sales',
       contactInfo: '+4917655025872',
    },
@@ -46,6 +47,7 @@ function OurTeam() {
                />
             ))}
          </div>
+         {/* <CommentForm /> */}
       </div>
    );
 }
