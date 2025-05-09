@@ -36,7 +36,7 @@ const PriceData = [
       surprise: '($0.54 / Ounce)',
    },
 ];
-export const option = [
+ const option = [
    {
       value: '2 oz bag.',
    },
@@ -90,7 +90,7 @@ export const option = [
    },
 ];
 
-export const quantityValues = [
+const quantityValues = [
    {
       value: '1',
    },

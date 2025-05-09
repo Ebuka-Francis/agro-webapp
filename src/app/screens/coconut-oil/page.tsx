@@ -13,8 +13,6 @@ import {
    SelectTrigger,
    SelectValue,
 } from '@/components/ui/select';
-import { option } from '../castle-oil/page';
-import { quantityValues } from '../castle-oil/page';
 import { Label } from '@/components/ui/label';
 
 const PriceData = [
@@ -35,6 +33,75 @@ const PriceData = [
       subtitle: 'Pack of six',
       price: '$55.39',
       surprise: '($0.54 / Ounce)',
+   },
+];
+
+const option = [
+   {
+      value: '2 oz bag.',
+   },
+   {
+      value: '4 oz bag. [Sold out, waitList available]',
+   },
+   {
+      value: '8 oz container. (USD 9.95)',
+   },
+   {
+      value: '16 oz container. (USD 11.95, - USD 12.95)',
+   },
+   {
+      value: '2 Ibs (32 oz) Cont (USD 16.95 - USD 17.95)',
+   },
+   {
+      value: '3 Ibs Container (USD 21.95)',
+   },
+   {
+      value: '5 Ibs bulk (USD 22.95)',
+   },
+   {
+      value: '6 Ibs Container (USD 29.95)',
+   },
+   {
+      value: '10 Ibs bulk (USD 41.95)',
+   },
+   {
+      value: '15 Ibs bulk  (USD 54.95 - USD 544.95)',
+   },
+   {
+      value: '25 Ibs bulk (USD 82.95)',
+   },
+   {
+      value: '25 Ibs (precut 5 Ib) (USD 89.95)',
+   },
+   {
+      value: '50 Ibs bulk (USD 164.95)',
+   },
+   {
+      value: '50 Ibs (5 Ibs) Bulk (USD 174.95)',
+   },
+   {
+      value: '100 Ibs bulk  Bulk (USD 329.95)',
+   },
+   {
+      value: '10 Boxes (25 Ibs) (USD 657.95 - USD 749.95)',
+   },
+   {
+      value: '80 Boxes (25 Ibs) (USD 5,599.95 - USD 5,999.95)',
+   },
+];
+
+const quantityValues = [
+   {
+      value: '1',
+   },
+   {
+      value: '2',
+   },
+   {
+      value: '3',
+   },
+   {
+      value: '4',
    },
 ];
 
