@@ -113,7 +113,7 @@ export default function Footer() {
                   <div className="flex flex-col gap-1">
                      <div className="flex items-center gap-2">
                         <Phone className="w-[13px]" />
-                        <p className="text-[13px]">+4917655025872</p>
+                        <p className="text-[13px]">+494018297173</p>
                      </div>
                      <div className="flex items-center gap-2">
                         <Mail className="w-[13px]" />
