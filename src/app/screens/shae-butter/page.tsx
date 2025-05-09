@@ -272,17 +272,6 @@ function Page() {
                   <li>Soaps and body butters</li>
                </ul>
             </div>
-            <div>
-               {' '}
-               <Image
-                  src={'/banner-img.jpeg'}
-                  alt={'banner -images'}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-[50vh] sm:h-auto"
-               />{' '}
-            </div>
          </div>
          <ProductAnalysis />
       </div>

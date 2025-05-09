@@ -1,6 +1,7 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '../ui/button';
+import WhatsAppButton from '../button-certificate/WhatsapButton';
 
 type TeamProps = {
    imgUrl: string;
@@ -14,19 +15,19 @@ const TeamData = [
       imgUrl: '/fred.jpeg',
       title: 'Fre Eni',
       position: 'C.E.O/Managing Director',
-      contactInfo: 'Reach me ',
+      contactInfo: '+49 1521 3491691',
    },
    {
       imgUrl: '/michela.jpeg',
       title: 'Frank Doe',
       position: 'Assistant C.E.O/ Head Of Sales',
-      contactInfo: 'Reach me ',
+      contactInfo: '+4917655025872',
    },
    {
       imgUrl: '/patience.jpeg',
       title: 'Patience Eke',
       position: 'General Manager/ Head of Operation',
-      contactInfo: 'Reach me ',
+      contactInfo: '+2348033073931 ',
    },
 ];
 
@@ -63,12 +64,16 @@ export function TeamCards({ imgUrl, title, position, contactInfo }: TeamProps) {
                className="rounded-[20px]"
             />
          </div>
-         <div className="w-[100%]">
+         <div className="w-[100%] flex flex-col items-center gap-2 ">
             <h4 className="text-[25px] text-center font-bold ">{title}</h4>
             <p className="text-[20px] text-center">{position}</p>
-            <Button className="cursor-pointer bg-green-800 w-[100%] text-[18px] font-bold p-[25px] ">
+            {/* <Button className="cursor-pointer bg-green-800 w-[100%] text-[18px] font-bold p-[25px] ">
                {contactInfo}
-            </Button>
+            </Button> */}
+            <WhatsAppButton
+               phoneNumber={contactInfo}
+               message={'I want to get your products '}
+            />
          </div>
       </div>
    );

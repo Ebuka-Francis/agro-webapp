@@ -105,19 +105,21 @@ export default function Footer() {
                      Get in touch with us{' '}
                   </h3>
                   <address className="text-[13px]">
-                     <b> Stemak Limited </b>
+                     <b>Klaxon Ford Resources </b>
                      <br />
-                     11 Irene Wontumi Street - Parakuo Estates, Dome Greater
-                     Accra Region. Ghana, West Africa
+                     Head Office: 1, Una Obasi Street of MCC Road, Aba, Abia
+                     State. Company Factory: Oyo State Nigeria.
                   </address>
                   <div className="flex flex-col gap-1">
                      <div className="flex items-center gap-2">
                         <Phone className="w-[13px]" />
-                        <p className="text-[13px]">+233 (0)24 427 18 18</p>
+                        <p className="text-[13px]">+4917655025872</p>
                      </div>
                      <div className="flex items-center gap-2">
                         <Mail className="w-[13px]" />
-                        <p className="text-[13px]"> info@stemaklimited.com</p>
+                        <p className="text-[13px]">
+                           sales@klaxonfordresources.com
+                        </p>
                      </div>
                   </div>
                </div>

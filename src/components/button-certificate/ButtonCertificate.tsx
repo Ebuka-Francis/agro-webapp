@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../ui/button';
 
 function ButtonCertificate() {
-   const phoneNumber = '2348133842387';
+   const phoneNumber = '+4917655025872';
    const message = 'product certificate';
 
    const handleClick = () => {

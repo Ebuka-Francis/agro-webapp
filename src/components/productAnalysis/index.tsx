@@ -45,7 +45,7 @@ export default function ProductAnalysis() {
 
    return (
       <Dialog>
-         <div className="flex flex-col items-center sm:flex-row justify-end p-4 gap-3">
+         <div className="flex flex-col items-center sm:flex-row justify-start p-4 gap-3">
             <DialogTrigger asChild>
                <Button className="bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500 rounded-full p-4 max-w-[230px] w-[100%] text-white font-bold border-none cursor-pointer ">
                   Product Quality Analysis
