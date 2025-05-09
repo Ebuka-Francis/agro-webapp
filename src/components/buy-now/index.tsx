@@ -17,7 +17,7 @@ export function BuyNow() {
       <DropdownMenu>
          <DropdownMenuTrigger asChild>
             <Button
-               className="text-[#fff] w-[150px] h-[50px] font-bold bg-[#669900] border border-black p-3  flex items-center gap-2 cursor-pointer "
+               className="text-[#fff] w-[150px] h-[50px] font-bold bg-[#669900] border border-none p-3  flex items-center gap-2 cursor-pointer "
                variant="outline"
             >
                Buy Now
@@ -34,7 +34,14 @@ export function BuyNow() {
                Get from amazon
             </NextLink>
             <NextLink
-               href="/"
+               href="https://www.amazon.com/organic-products/s?k=organic+products"
+               target="_blank"
+               className="hover:bg-gray-400 cursor-pointer text-black text-[14px] p-2 w-full "
+            >
+               Get from Etsy
+            </NextLink>
+            <NextLink
+               href="/screens/our-team"
                className="hover:bg-gray-400 cursor-pointer text-black text-[14px] p-2 w-full "
                target="_blank"
             >

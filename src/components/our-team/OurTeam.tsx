@@ -11,39 +11,21 @@ type TeamProps = {
 
 const TeamData = [
    {
-      imgUrl: '/michelle.png',
-      title: 'Michaela Lang',
-      position: 'CEO',
+      imgUrl: '/fred.jpeg',
+      title: 'Fre Eni',
+      position: 'C.E.O/Managing Director',
       contactInfo: 'Reach me ',
    },
    {
-      imgUrl: '/human.png',
+      imgUrl: '/michela.jpeg',
       title: 'Frank Doe',
-      position: 'CEO',
+      position: 'Assistant C.E.O/ Head Of Sales',
       contactInfo: 'Reach me ',
    },
    {
-      imgUrl: '/human.png',
-      title: 'dan Doe',
-      position: 'CEO',
-      contactInfo: 'Reach me ',
-   },
-   {
-      imgUrl: '/human.png',
-      title: 'mag Doe',
-      position: 'CEO',
-      contactInfo: 'Reach me ',
-   },
-   {
-      imgUrl: '/human.png',
-      title: 'mosses Doe',
-      position: 'CEO',
-      contactInfo: 'Reach me ',
-   },
-   {
-      imgUrl: '/human.png',
-      title: 'mat Doe',
-      position: 'CEO',
+      imgUrl: '/patience.jpeg',
+      title: 'Patience Eke',
+      position: 'General Manager/ Head of Operation',
       contactInfo: 'Reach me ',
    },
 ];
@@ -52,7 +34,7 @@ function OurTeam() {
    return (
       <div className="max-w-6xl mx-auto">
          <h2 className=" m-4 text-[30px] text-center ">Meet Our Team</h2>
-         <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 overflow-hidden">
+         <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 overflow-hidden m-[30px]">
             {TeamData.map((team) => (
                <TeamCards
                   key={team.title}
@@ -73,7 +55,13 @@ export function TeamCards({ imgUrl, title, position, contactInfo }: TeamProps) {
    return (
       <div className="flex flex-col items-center gap-3 ">
          <div className="max-w-[inherit] mx-auto rounded-[20px]">
-            <Image src={imgUrl} alt={imgUrl} width={400} height={200} />
+            <Image
+               src={imgUrl}
+               alt={imgUrl}
+               width={400}
+               height={200}
+               className="rounded-[20px]"
+            />
          </div>
          <div className="w-[100%]">
             <h4 className="text-[25px] text-center font-bold ">{title}</h4>

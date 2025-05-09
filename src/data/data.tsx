@@ -28,37 +28,41 @@ export const CardItems = [
 export const Commodity: CommodityProps[] = [
    {
       id: 'c1',
-      imgUrl: '/shea-butter.png',
+      imgUrl: '/shae-butter.jpeg',
       description:
          'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
       link: '/screens/shae-butter',
    },
    {
       id: 'c2',
-      imgUrl: '/castle-oil.png',
+      imgUrl: '/banner-img.jpeg',
       description:
          '   Cold-pressed and nutrient-rich, Castle Oil is valued for its versatility in cooking, skincare, and wellness, delivering natural nourishment and a range of health benefits. ',
       link: '/screens/castle-oil',
    },
    {
       id: 'c3',
-      imgUrl: '/coconut-oil.png',
+      imgUrl: '/coconut-oil.jpeg',
       description:
          'Cold-pressed from fresh coconuts, this oil is popular in cooking, skincare, and haircare, offering numerous health benefits.',
       link: '/screens/coconut-oil',
    },
-   {
-      id: 'c4',
-      imgUrl: '/mecca.png',
-      description:
-         ' Mica is a mineral with a layered structure that impresses with its exceptional chemical and thermal resistance, electrical insulation effect and sound-absorbing properties.',
-      link: '/screens/mica',
-   },
+
    {
       id: 'c5',
-      imgUrl: '/moringa_oil.png',
+      imgUrl: '/banner-img.jpeg',
       description:
          'Extracted from the seeds of the Moringa oleifera tree through a cold press method, our Moringa Oil is a premium-quality, nutrient-rich oil known for its light texture and powerful healing properties. Retaining all its natural benefits due to cold pressing, this oil is a true skin and hair elixir.',
       link: '/screens/moringa',
    },
+];
+
+export const Inorganic: CommodityProps[] = [
+   //  {
+   //    id: 'c4',
+   //    imgUrl: '/banner-img.jpeg',
+   //    description:
+   //       ' Mica is a mineral with a layered structure that impresses with its exceptional chemical and thermal resistance, electrical insulation effect and sound-absorbing properties.',
+   //    link: '/screens/mica',
+   // },
 ];

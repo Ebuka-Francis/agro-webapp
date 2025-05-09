@@ -33,27 +33,23 @@ const footerDate1 = [
 const footerData2 = [
    {
       label: 'Shea Butter',
-      link: '',
+      link: '/screens/shae-butter',
    },
    {
-      label: 'Shea Nuts',
-      link: '',
+      label: 'Coconut Oil',
+      link: '/screens/coconut-oil',
    },
    {
-      label: 'Kola Nuts',
-      link: '',
+      label: 'Castle Oil',
+      link: '/screens/castle-oil',
    },
    {
-      label: 'Cocoa Butter',
-      link: '',
+      label: 'Moringa',
+      link: '/screens/moringa',
    },
    {
-      label: 'Cocoa',
-      link: '',
-   },
-   {
-      label: 'Cocoa Powder',
-      link: '',
+      label: 'Mica',
+      link: '/screens/mica',
    },
 ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import CommodityList from '@/components/commodity/Commodity';
+import { CommodityItems } from '@/components/commodity/Commodity';
 
 export default function Page() {
-   return <CommodityList />;
+   return <CommodityItems />;
 }

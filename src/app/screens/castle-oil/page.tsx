@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import ProductAnalysis from '@/components/productAnalysis';
 import { BuyNow } from '@/components/buy-now';
@@ -35,7 +36,7 @@ const PriceData = [
       surprise: '($0.54 / Ounce)',
    },
 ];
-const option = [
+export const option = [
    {
       value: '2 oz bag.',
    },
@@ -89,7 +90,7 @@ const option = [
    },
 ];
 
-const quantityValues = [
+export const quantityValues = [
    {
       value: '1',
    },
@@ -105,119 +106,123 @@ const quantityValues = [
 ];
 
 function Page() {
+   const [selectedOption, setSelectedOption] = useState('');
+   const [quantity, setQuantity] = useState(1);
+   const [basePrice, setBasePrice] = useState(9.95);
+
+   useEffect(() => {
+      // Extract USD price from selected option
+      const match = selectedOption.match(/USD\s?([\d.,]+)/);
+      if (match) {
+         setBasePrice(parseFloat(match[1].replace(',', '')));
+      }
+   }, [selectedOption]);
+
+   const totalPrice = (basePrice * quantity).toFixed(2);
    return (
       <div className="mt-6 max-w-5xl mx-auto p-5 ">
          <h3 className=" font-bold mb-3 text-center text-[34px]">
             Product Details
          </h3>
-         <div className="flex flex-col lg:flex-row items-start gap-5 w-full ">
-            <div className=" static lg:sticky md:top-[150px] mx-auto max-w-[1000px] w-[100%] flex flex-col gap-[20px] items-center md:items-start  ">
-               <div className="flex flex-col lg:flex-row gap-[10px] w-[100%] items-center lg:items-start ">
-                  <Image
-                     src="/castle-oil-copy.png"
-                     alt="Castle oil"
-                     width={300}
-                     height={200}
-                  />
-                  <div className="font-bold flex lg:flex-col gap-[10px]">
-                     {PriceData.map((price) => (
-                        <div
-                           className="border border-gray-600 p-2 rounded-[10px] "
-                           key={price.title}
-                        >
-                           <p className="text-[14px] ">{price.title}</p>
-                           <p className="text-[14px] ">{price.subtitle}</p>
-                           <p className="text-[10px]">{price.price}</p>
-                           <p className="text-[10px]">{price.surprise}</p>
-                        </div>
-                     ))}
+         <div className="flex flex-col  items-start gap-5 w-full ">
+            <div className="flex flex-col lg:flex-row items-start gap-5 w-full">
+               <div className=" static lg:sticky md:top-[150px] mx-auto max-w-[700px] w-[100%] flex flex-col gap-[20px] items-center lg:items-start  ">
+                  <div className="flex flex-col xl:flex-row gap-[10px] w-[100%] items-center lg:items-start ">
+                     <Image
+                        src="/coconut-oil-renew.jpeg"
+                        alt="coconut oil"
+                        width={300}
+                        height={200}
+                     />
+                     <div className="font-bold flex xl:flex-col gap-[10px]">
+                        {PriceData.map((price) => (
+                           <div
+                              className="border border-gray-600 p-2 rounded-[10px] "
+                              key={price.title}
+                           >
+                              <p className="text-[14px] ">{price.title}</p>
+                              <p className="text-[14px] ">{price.subtitle}</p>
+                              <p className="text-[10px]">{price.price}</p>
+                              <p className="text-[10px]">{price.surprise}</p>
+                           </div>
+                        ))}
+                     </div>
                   </div>
+                  <BuyNow />
                </div>
-               <BuyNow />
-            </div>
-            <div className="w-full">
-               <div>
-                  <p className="text-[#669900] text-[16px]">In 20 + carts</p>
-                  <h3 className="text-[27px] font-bold text-black">USD 9.95</h3>
-                  <p className="text-[12px] text-black">
-                     Local taxes included (where applicable)
-                  </p>
-                  <p>
-                     Raw African Shea Butter Bulk, 100% Pure Natural Organic
-                     Unrefined Virgin From Ghana Moisturizer For Face, Skin,
-                     Body,Hair, Soap
-                  </p>
-                  <div className="flex items-center gap-2">
-                     {' '}
-                     <a className="text-[12px] font-bold" href="#">
-                        ShopKlaxonResources
-                     </a>{' '}
-                     <div className="flex items-center gap-1">
-                        <Star className=" w-[14px]" />
-                        <Star className=" w-[14px]" />
-                        <Star className=" w-[14px]" />
-                        <Star className=" w-[14px]" />
-                        <Star className=" w-[14px]" />
-                     </div>{' '}
+               <div className="w-full">
+                  <div>
+                     <p className="text-[#669900] text-[16px]">In 20 + carts</p>
+                     <h3 className="text-[27px] font-bold text-black">
+                        {totalPrice}
+                     </h3>
+                     <p className="text-[12px] text-black">
+                        Local taxes included (where applicable)
+                     </p>
+                     <p>
+                        Raw African Shea Butter Bulk, 100% Pure Natural Organic
+                        Unrefined Virgin From Ghana Moisturizer For Face, Skin,
+                        Body,Hair, Soap
+                     </p>
+                     <div className="flex items-center gap-2">
+                        {' '}
+                        <a className="text-[12px] font-bold" href="#">
+                           ShopKlaxonResources
+                        </a>{' '}
+                        <div className="flex items-center gap-1">
+                           <Star className=" w-[14px]" />
+                           <Star className=" w-[14px]" />
+                           <Star className=" w-[14px]" />
+                           <Star className=" w-[14px]" />
+                           <Star className=" w-[14px]" />
+                        </div>{' '}
+                     </div>
+                     <div className="flex items-center gap-3 p-2">
+                        {' '}
+                        <Check className=" w-[14px] text-[#669900]" />{' '}
+                        <p className="text-[12px]">
+                           Returns & exchanges accepted
+                        </p>{' '}
+                     </div>
                   </div>
-                  <div className="flex items-center gap-3 p-2">
-                     {' '}
-                     <Check className=" w-[14px] text-[#669900]" />{' '}
-                     <p className="text-[12px]">Returns & exchanges accepted</p>{' '}
-                  </div>
+                  <form className="p-4">
+                     <Select onValueChange={(val) => setSelectedOption(val)}>
+                        <Label>Size *</Label>
+                        <SelectTrigger className="w-[85%] my-3 h-[50px] ">
+                           <SelectValue placeholder="Select an option" />
+                        </SelectTrigger>
+                        <SelectContent>
+                           <SelectGroup>
+                              <SelectLabel>Select an option</SelectLabel>
+                              {option.map((item) => (
+                                 <SelectItem
+                                    value={item.value}
+                                    key={item.value}
+                                 >
+                                    {item.value}
+                                 </SelectItem>
+                              ))}
+                           </SelectGroup>
+                        </SelectContent>
+                     </Select>
+
+                     <Select onValueChange={(val) => setQuantity(Number(val))}>
+                        <Label>Quantity *</Label>
+                        <SelectTrigger className="w-[85%] my-3 h-[50px] ">
+                           <SelectValue placeholder="Select quantity" />
+                        </SelectTrigger>
+                        <SelectContent>
+                           <SelectGroup>
+                              {quantityValues.map((val) => (
+                                 <SelectItem value={val.value} key={val.value}>
+                                    {val.value}
+                                 </SelectItem>
+                              ))}
+                           </SelectGroup>
+                        </SelectContent>
+                     </Select>
+                  </form>
                </div>
-               <form action="" className="p-4">
-                  <Select>
-                     <Label>
-                        Color <sup>* </sup>{' '}
-                     </Label>
-                     <SelectTrigger className="w-[85%] my-3 h-[50px] ">
-                        <SelectValue placeholder="Select an option" />
-                     </SelectTrigger>
-                     <SelectContent>
-                        <SelectGroup>
-                           <SelectItem value="apple">
-                              white/Ivory (USD 99.5 - USD 5,599.95)
-                           </SelectItem>
-                           <SelectItem value="banana">
-                              Yellow (USD 99.5 - USD 5,599.95)
-                           </SelectItem>
-                        </SelectGroup>
-                     </SelectContent>
-                  </Select>
-                  <Select>
-                     <Label>Size *</Label>
-                     <SelectTrigger className="w-[85%] my-3 h-[50px] ">
-                        <SelectValue placeholder="Select an option" />
-                     </SelectTrigger>
-                     <SelectContent>
-                        <SelectGroup>
-                           <SelectLabel>Select an option</SelectLabel>
-                           {option.map((items) => (
-                              <SelectItem value="est" key={items.value}>
-                                 {items.value}
-                              </SelectItem>
-                           ))}
-                        </SelectGroup>
-                     </SelectContent>
-                  </Select>
-                  <Select>
-                     <Label>Quantity *</Label>
-                     <SelectTrigger className="w-[85%] my-3 h-[50px] ">
-                        <SelectValue placeholder="Select an option" />
-                     </SelectTrigger>
-                     <SelectContent>
-                        <SelectGroup>
-                           <SelectLabel>North America</SelectLabel>
-                           {quantityValues.map((items) => (
-                              <SelectItem value="est" key={items.value}>
-                                 {items.value}
-                              </SelectItem>
-                           ))}
-                        </SelectGroup>
-                     </SelectContent>
-                  </Select>
-               </form>
             </div>
          </div>
 
@@ -277,16 +282,19 @@ function Page() {
                </ul>
             </div>
          </div>
-         <div className="text-[20px] p-4">
-            <p className="font-bold">Common Uses</p>
-            <ul className="list-disc">
-               <li>Hair oils and scalp treatments</li>
-               <li>Skin moisturizers and massage oils</li>
-               <li>Eyelash and brow serums</li>
-               <li>Soaps and cosmetics</li>
-               <li>Ayurvedic and traditional medicine</li>
-               <li>Natural remedy for joint pain and arthritis</li>
-            </ul>
+         <div className="flex flex-col md:flex-row justify-between items-center m-[20px] ">
+            <div className="text-[20px] p-4">
+               <p className="font-bold">Common Uses</p>
+               <ul className="list-disc">
+                  <li>Hair oils and scalp treatments</li>
+                  <li>Skin moisturizers and massage oils</li>
+                  <li>Eyelash and brow serums</li>
+                  <li>Soaps and cosmetics</li>
+                  <li>Ayurvedic and traditional medicine</li>
+                  <li>Natural remedy for joint pain and arthritis</li>
+               </ul>
+            </div>
+            <div></div>
          </div>
          <ProductAnalysis />
       </div>

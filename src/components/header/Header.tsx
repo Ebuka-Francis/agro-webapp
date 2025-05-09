@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { CarouselDemo } from '../carousel/Carousel';
 
 import { Button } from '../ui/button';
+import { Mail } from 'lucide-react';
 
 const images = [
    {
@@ -50,13 +51,13 @@ export default function Header() {
             <div className="max-w-6xl mx-auto w-full flex justify-center items-center p-10">
                <h3 className="text-[34px]">
                   We have over{' '}
-                  <span className="text-[#669900] font-bold">20 years</span>{' '}
+                  <span className="text-[#669900] font-bold">5 years</span>{' '}
                   experience exporting to the world!
                </h3>
             </div>
          </div>
-         <Button className="size-6 animate-bounce fixed right-15 bottom-7 text-[#669900] border-none w-[180px] h-[40px] ">
-            Contact Support
+         <Button className="size-6 animate-bounce fixed right-15 bottom-7 text-[#669900] border-none w-[100px] h-[40px] ">
+            <Mail /> support
          </Button>
       </header>
    );

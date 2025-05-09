@@ -25,8 +25,9 @@ const images = [
    '/document7.jpeg',
    '/document8.jpeg',
    '/document9.jpeg',
-   '/document10.jpeg',
-   '/document11.jpeg',
+   '/test-report.jpeg',
+   '/shae-butterPosted.jpeg',
+   '/shae-butts.jpeg',
 
    // Add more image paths here
 ];
