@@ -28,33 +28,33 @@ export const CardItems = [
 export const Commodity: CommodityProps[] = [
    {
       id: 'c1',
-      imgUrl: '/shae-butter.jpeg',
+      imgUrl: '/shae-butters.jpeg',
       description:
          'A rich, natural moisturizer extracted from shea nuts, known for its skin-nourishing and healing properties. Widely used in cosmetics and skincare',
       link: '/screens/shae-butter',
    },
    {
       id: 'c2',
-      imgUrl: '/banner-img.jpeg',
+      imgUrl: '/castle-oils.jpeg',
       description:
          '   Cold-pressed and nutrient-rich, Castle Oil is valued for its versatility in cooking, skincare, and wellness, delivering natural nourishment and a range of health benefits. ',
       link: '/screens/castle-oil',
    },
    {
       id: 'c3',
-      imgUrl: '/coconut-oil.jpeg',
+      imgUrl: '/coconut-oils.jpeg',
       description:
          'Cold-pressed from fresh coconuts, this oil is popular in cooking, skincare, and haircare, offering numerous health benefits.',
       link: '/screens/coconut-oil',
    },
 
-   {
-      id: 'c5',
-      imgUrl: '/banner-img.jpeg',
-      description:
-         'Extracted from the seeds of the Moringa oleicera tree through a cold press method, Our Moringa Oil of high nutrients value.',
-      link: '/screens/moringa',
-   },
+   // {
+   //    id: 'c5',
+   //    imgUrl: '/banner-img.jpeg',
+   //    description:
+   //       'Extracted from the seeds of the Moringa oleicera tree through a cold press method, Our Moringa Oil of high nutrients value.',
+   //    link: '/screens/moringa',
+   // },
 ];
 
 export const Inorganic: CommodityProps[] = [
