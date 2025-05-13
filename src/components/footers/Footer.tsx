@@ -5,27 +5,16 @@ import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 
 const footerDate1 = [
    {
-      label: 'African Artefact Exports',
+      label: 'Premium Agro Organic Export',
+      link: '/',
+   },
+
+   {
+      label: 'Sustainable & Ethical Sourcing',
       link: '/',
    },
    {
-      label: 'Agricultural Commodities Exports',
-      link: '/',
-   },
-   {
-      label: 'Agro Processors',
-      link: '/',
-   },
-   {
-      label: 'Commodity Distributors',
-      link: '/',
-   },
-   {
-      label: 'Castle Oil to Castor Oil',
-      link: '/',
-   },
-   {
-      label: 'Sourcing & Buying Agents',
+      label: 'Global Supply & Reliable Logistics',
       link: '/',
    },
 ];
@@ -40,7 +29,7 @@ const footerData2 = [
       link: '/screens/coconut-oil',
    },
    {
-      label: 'Castle Oil',
+      label: 'Castor Oil',
       link: '/screens/castle-oil',
    },
    {
@@ -107,7 +96,7 @@ export default function Footer() {
                   <address className="text-[13px]">
                      <b>Klaxon Ford Resources </b>
                      <br />
-                     Head Office: 1, Una Obasi Street of MCC Road, Aba, Abia
+                     Head Office: 1, Uba Obasi Street of MCC Road, Aba, Abia
                      State. Company Factory: Oyo State Nigeria.
                   </address>
                   <div className="flex flex-col gap-1">

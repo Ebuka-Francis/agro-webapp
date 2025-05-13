@@ -128,7 +128,7 @@ function Page() {
                <div className="flex flex-col lg:flex-row gap-[10px] w-[100%] items-center lg:items-start ">
                   <Image
                      src="/moringa-renewd.jpeg"
-                     alt="Castle oil"
+                     alt="Castor oil"
                      width={300}
                      height={200}
                   />

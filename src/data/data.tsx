@@ -37,7 +37,7 @@ export const Commodity: CommodityProps[] = [
       id: 'c2',
       imgUrl: '/castle-oils.jpeg',
       description:
-         '   Cold-pressed and nutrient-rich, Castle Oil is valued for its versatility in cooking, skincare, and wellness, delivering natural nourishment and a range of health benefits. ',
+         '   Cold-pressed and nutrient-rich, Castor Oil is valued for its versatility in cooking, skincare, and wellness, delivering natural nourishment and a range of health benefits. ',
       link: '/screens/castle-oil',
    },
    {
